@@ -1,0 +1,19 @@
+CREATE TABLE fashion_store (id INTEGER, sku INTEGER, category TEXT, name TEXT, quantity INTEGER, price INTEGER);
+
+INSERT INTO fashion_store VALUES (1, 5434, "Hats", "Blue Baseball Cap", 7, 5.99);
+INSERT INTO fashion_store VALUES (2,5436, "Hats", "Red Baseball Cap", 4, 5.99);
+INSERT INTO fashion_store VALUES (3, 5443, "Hats", "Brown Straw Hat", 9, 9.99);
+INSERT INTO fashion_store VALUES (4, 5447, "Hats", "Pink Straw Hat", 3, 9.99);
+INSERT INTO fashion_store VALUES (5, 5449, "Hats", "Black Straw Hat with Bow", 1, 15.99);
+INSERT INTO fashion_store VALUES (6, 6991, "Shirts", "Black Short Sleeve OS", 8, 12.99);
+INSERT INTO fashion_store VALUES (7, 6993, "Shirts", "Grey Short Sleeve OS", 3, 12.99);
+INSERT INTO fashion_store VALUES (8, 6995, "Shirts", "White Short Sleeve OS", 2, 12.99);
+INSERT INTO fashion_store VALUES (9, 6997, "Shirts", "Pink Long Sleeve OS", 5, 12.99);
+INSERT INTO fashion_store VALUES (10, 6999, "Shirts", "Red Long Sleeve OS", 10, 15.99);
+INSERT INTO fashion_store VALUES (11, 8221, "Shoes", "Black Sneakers Mens 7", 6, 19.99);
+INSERT INTO fashion_store VALUES (14, 8226, "Shoes", "Black Sneakers Mens 10", 7, 19.99);
+INSERT INTO fashion_store VALUES (15, 8229, "Shoes", "Black Sneakers Mens 11", 5, 19.99);
+
+SELECT * FROM fashion_store ORDER BY price;
+
+SELECT * FROM fashion_store WHERE quantity > 5 ORDER BY price;
