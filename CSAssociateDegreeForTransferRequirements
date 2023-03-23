@@ -1,0 +1,27 @@
+CREATE TABLE cs_adt_requirements (id INTEGER, class_id TEXT, class_name TEXT, units INTEGER);
+
+INSERT INTO cs_adt_requirements VALUES (1, "csis 45","c++ programing", 3);
+INSERT INTO cs_adt_requirements VALUES (2, "csis 46", "c++ programing II", 3);
+INSERT INTO cs_adt_requirements VALUES (3, "csis 28","computer architecture organization", 3);
+INSERT INTO cs_adt_requirements VALUES (4, "csis 26", "discrete structures", 3);
+INSERT INTO cs_adt_requirements VALUES (5, "math 1a", "calculus", 4);
+INSERT INTO cs_adt_requirements VALUES (6, "math 1b","calculus II",4);
+INSERT INTO cs_adt_requirements VALUES (7, "phys 4a", "physics for engineers I", 4);
+INSERT INTO cs_adt_requirements VALUES (8, "phys 4b", "physics for engineers II", 4);
+
+SELECT *
+FROM cs_adt_requirements;
+
+SELECT *
+FROM cs_adt_requirements 
+WHERE class_id LIKE ("csis%")
+ORDER BY units;
+
+SELECT SUM(units)
+AS 'TotalUnits'
+FROM cs_adt_requirements;
+
+SELECT MAX(id)
+AS 'TotalClasses'
+FROM cs_adt_requirements;
+
